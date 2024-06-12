@@ -3,9 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
+    <link rel="stylesheet" href="assets/styles.css">
     <title>Mi Portafolio</title>
 </head>
 <body>
-    
+    <!--Nav menu-->
+    <div class="container">
+        <nav class="header">
+            <div class="nav__logo">
+                <p class="nav__name">Portafolio</p>
+            </div>
+            <div class="nav__menu" id="myNavMenu">
+                <ul class="menu__list">
+                    <li class="menu__li">
+                        <a href="#home" class="menu__link active__link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="menu__li">
+                        <a href="#about" class="menu__link">Sobre mí</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="menu__li">
+                        <a href="#projects" class="menu__link">Proyectos</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="menu__li">
+                        <a href="#contact" class="menu__link">Contacto</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <!--Dark Mode-->
+            <div class="dark__mode">
+                <div class="moon__sun" id="toggle-switch">
+                    <i class="fa fa-moon" id="moon"></i>
+                    <i class="fa fa-sun" id="sun"></i>
+                </div>
+            </div>
+            <div class="menu__btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+        <main class="wrapper">
+            <section class="featured__box" id="home">
+                <div class="featured__text">
+                    <div class="hello">
+                        <p>Hola, soy</p>
+                    </div>
+                    <div class="featured__name">
+                        <span class="typedText"></span>
+                    </div>
+                    <div class="text__info">
+                        <p>Mi nombre es Alexis! Desarrolador Web con experiencia en diferentes tecnologías.</p>
+                    </div>
+                    <div class="text__btn">
+                        <button class="btn hire__btn">Mi red social</button>
+                        <button class="btn">Descargar CV <i class="uil uil-file"></i></button>
+                    </div>
+                    <div class="social__icons">
+                        <div class="icon__circle"></div>
+                        <div class="icon"><i class="uil uil-instagram"></i></div>
+                        <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                        <div class="icon"><i class="uil uil-behance-alt"></i></div>
+                        <div class="icon"><i class="uil uil-github-alt"></i></div>
+                    </div>
+                </div>
+                <div class="featured__image">
+                    <div class="image">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </section>
+            <!--about box-->
+            <section class="section" id="about">
+                <div class="top__header">
+                    <h1>Sobre mí</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about__info">
+                            <figure class="about-me">
+                                <figcaption>
+                                    <img src="" alt="" class="profile"/>
+                                    <h2>Desarrollador Web</h2>
+                                    <p>Mi nombre es Alexis! Desarrollador web con experiencia en diferentes técnologías</p>                            
+                                </figure>
+                                <button class="about-me-btn">Mi red social</button>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__box">
+                            <span class="title">HTML</span>
+                            <div class="skill__bar html">
+                                <span class="skill_per">
+                                    <span class="tooltip">90%</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="skill__box">
+                            <span class="title">CSS</span>
+                            <div class="skill__bar css">
+                                <span class="skill_per">
+                                    <span class="tooltip">80%</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="skill__box">
+                            <span class="title">JavaScript</span>
+                            <div class="skill__bar">
+                                <span class="skill_per js">
+                                    <span class="tooltip">70%</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="skill__box">
+                            <span class="title">PHP</span>
+                            <div class="skill__bar">
+                                <span class="skill_per php">
+                                    <span class="tooltip">90%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Project Box-->
+            <section class="section" id="Projects">
+                <div class="top__header">
+                    <h1>Proyectos</h1>
+                </div>
+                <div class="project__container">
+                    <div class="project__box">
+                        <i class="uil uil-briefcase-alt"></i>
+                        <h3>Completados</h3>
+                        <label>Proyectos completados</label>
+                    </div>
+                    <div class="project__box">
+                        <i class="uil uil-users-alt"></i>
+                        <h3>Clientes</h3>
+                        <label>Seccion de prueba</label>
+                    </div>
+                    <div class="project__box">
+                        <i class="uil uil-award"></i>
+                        <h3>Experiencia</h3>
+                        <label>+2 años en desarrollo web</label>
+                    </div>
+                </div>
+            </section>
+            <!--Contact Box-->
+            <section class="section" id="contact">
+                <div class="top__header">
+                    <h1>Contacto</h1>
+                    <span>¿Necesitas ayuda con tu proyecto?</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contact__info">
+                            <h2>Contáctame <i class="uil uil-corner-right-down"></i></h2>
+                            <p><i class="uil uil-envelope">example@mail.com</i></p>
+                            <p><i class="uil uil-phone">Telefono: XXXXXXXXXX</i></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form__control">
+                            <div class="form__inputs">
+                                <input type="text" class="input__field" placeholder="Nombre">
+                                <input type="text" class="input__field" placeholder="Email">
+                            </div>
+                            <div class="text__area">
+                                <input type="text" class="input__subject" placeholder="Asunto">
+                                <textarea placeholder="Mensaje"></textarea>
+                            </div>
+                            <div class="form__button">
+                                <button class="btn">Enviar<i class="uil uil-message"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--Footer-->
+        <footer>
+            <div class="middle__footer">
+                <ul class="footer__menu">
+                    <li class="footer__menu-list">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="footer__menu-list">
+                        <a href="#about">Sobre mí</a>
+                    </li>
+                    <li class="footer__menu-list">
+                        <a href="#projects">Proyectos</a>
+                    </li>
+                    <li class="footer__menu-list">
+                        <a href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <div class="icon"><i class="uil uil-instagram"></i></div>
+                <div class="icon"><i class="fa-brands fa-linkedin-in icon"></i></div>
+                <div class="icon"><i class="uil uil-behance-alt"></i></div>
+                <div class="icon"><i class="uil uil-github-alt"></i></div>
+            </div>
+            <div class="bottom__footer">
+                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Alexis Serrano</a> - 2024</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
