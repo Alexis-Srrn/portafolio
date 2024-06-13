@@ -334,3 +334,184 @@ i{
       transform: translateY(50px);
    }
 }
+
+/*---Main---*/
+
+.section{
+   padding-block: 5em;
+}
+
+.row{
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   gap: 50px;
+}
+
+.col{
+   display: flex;
+   width: 50%;
+}
+
+.top__header{
+   text-align: center;
+   margin-bottom: 5em;
+}
+
+.top__header h1{
+   font-weight: 600;
+   color: var(--text-color);
+   margin-bottom: 10px;
+}
+
+/*----About info----*/
+
+.about__info{
+   position: relative;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   padding-block: 45px 45px;
+   padding-inline: 35px;
+   border: 2px solid #fff;
+   background: transparent;
+   box-shadow: 1px 8px 10px 2px var(--first-shadow);
+   border-radius: 20px;
+}
+
+.about-me *{
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   -webkit-transition: all 0.25s ease;
+   transition: all 0.25s ease;
+}
+
+.about__info figcaption{
+   width: 100%;
+   padding: 25px;
+   position: relative;
+}
+
+.about-me .profile{
+   border-radius: 50%;
+   position: absolute;
+   bottom: 100%;
+   left: 20px;
+   z-index: 1;
+   background-color: #fff;
+   max-width: 90px;
+   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.about-me h2{
+   color: var(--text-color);
+}
+
+.about-me p{
+   margin-top: 10px;
+   color: var(--text-color);
+}
+
+.about__info .about-me-btn{
+   text-decoration: none;
+   font-size: 15px;
+   padding: 10px 20px;
+   cursor: pointer;
+   border: 20px;
+   border-radius: 20px;
+   background: #8749f2;
+   color: #fff;
+   margin-top: 20px;
+   font-weight: 500;
+   transition: all 0.5s ease;
+}
+
+/*----Skill Box-----*/
+
+.skill{
+   position: relative;
+   max-width: 600px;
+   width: 100%;
+   background: transparent;
+   box-shadow: 1px 8px 10px 2px var(--first-shadow);
+   padding: 10px 20px;
+   border: 2px solid #fff;
+   border-radius: 20px;
+}
+
+.skill .skill__box{
+   width: 100%;
+   margin: 25px 0;
+}
+
+.skill__box .title{
+   display: block;
+   font-size: 14px;
+   font-weight: 600;
+   color: var(--text-color);
+}
+
+.skill__box .skill__bar{
+   height: 8px;
+   width: 100%;
+   border-radius: 6px;
+   margin-top: 6px;
+   background: rgba(0, 0, 0, 0.1);
+}
+
+.skill__box .skill_per{
+   position: relative;
+   display: block;
+   height: 100%;
+   width: 90%;
+   border-radius: 6px;
+   background: #8749f2;
+   animation: progress 0.4s ease-in-out forwards;
+   opacity: 0;
+}
+
+.skill_per.html{
+   animation-delay: 0.1s;
+   width: 90%;
+}
+.skill_per.css{
+   animation-delay: 0.1s;
+   width: 80%;
+}
+.skill_per.js{
+   animation-delay: 0.1s;
+   width: 70%;
+}
+.skill_per.php{
+   animation-delay: 0.1s;
+   width: 90%;
+}
+.skill_per.sql{
+   animation-delay: 0.1s;
+   width: 80%;
+}
+
+@keyframes progress{
+   0%{
+      width: 0;
+      opacity: 1;
+   }
+   100%{
+      opacity: 1;
+   }
+}
+
+.skill_per .tooltip{
+   position: absolute;
+   right: -14px;
+   top: -28px;
+   font-size: 9px;
+   color: #fff;
+   padding: 2px 6px;
+   border-radius: 20px;
+   background: #8749f2;
+   z-index: 1;
+}
+
+
+/*----Projects-----*/
