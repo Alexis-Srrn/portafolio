@@ -514,4 +514,67 @@ i{
 }
 
 
-/*----Projects-----*/
+/*----Project box-----*/
+.project__container{
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   gap: 20px;
+   flex-wrap: wrap;
+}
+
+.project__box{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 30%;
+   height: 250px;
+   background: transparent;
+   border: 2px solid #fff;
+   border-radius: 20px;
+   box-shadow: 1px 8px 10px 2px var(--first-shadow);
+   overflow: hidden;
+   cursor: pointer;
+}
+
+.project__box > i{
+   font-size: 50px;
+   color: #8749f2;
+   margin-bottom: 25px;
+}
+
+.project__box label{
+   font-size: 15px;
+   color: var(--text-color);
+}
+
+.project__box::after,
+.contact__info::after{
+   content: "";
+   position: absolute;
+   bottom: -100%;
+   background: #8749f2;
+   width: 100%;
+   height: 100%;
+   transition: 0.4s;
+   z-index: 0.1; 
+}
+
+.project__box:hover.project__box::after,
+.contact__info:hover.contact__info::after{
+   bottom: 0;
+}
+
+.project__box:hover.project__box i,
+.project__box:hover.project__box > h3,
+.project__box:hover.project__box > label{
+   color: #fff;
+   z-index: 2;
+}
+
+.top__header span{
+   color: var(--text-color);
+}
+
