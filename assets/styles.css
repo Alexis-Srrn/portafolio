@@ -523,6 +523,9 @@ i{
    flex-wrap: wrap;
 }
 
+
+
+
 .project__box{
    position: relative;
    display: flex;
@@ -539,13 +542,21 @@ i{
    cursor: pointer;
 }
 
-.project__box > i{
+.project__box a{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.project__box a > i{
    font-size: 50px;
    color: #8749f2;
    margin-bottom: 25px;
 }
 
-.project__box label{
+.project__box a label{
    font-size: 15px;
    color: var(--text-color);
 }
@@ -567,9 +578,9 @@ i{
    bottom: 0;
 }
 
-.project__box:hover.project__box i,
-.project__box:hover.project__box > h3,
-.project__box:hover.project__box > label{
+.project__box:hover.project__box a i,
+.project__box:hover.project__box a > h3,
+.project__box:hover.project__box a > label{
    color: #fff;
    z-index: 2;
 }
