@@ -513,6 +513,45 @@ i{
    z-index: 1;
 }
 
+/*---Technology box---*/
+
+.technology__container{
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   gap: 20px;
+   flex-wrap: wrap;
+}
+
+.technology__box{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 30%;
+   height: 210px;
+   background: transparent;
+   border: 2px solid #fff;
+   box-shadow: 1px 8px 10px 2px var(--first-shadow);
+   cursor: pointer;
+}
+
+.techno__image{
+   width: 180px;
+   height: 180px;
+   overflow: hidden;
+   animation: imgFloat 3s ease-in-out infinite;
+}
+
+
+
+
+@keyframes imgFloat{
+   50%{
+      transform: translateY(10px);
+   }
+}
 
 /*----Project box-----*/
 .project__container{
@@ -851,6 +890,14 @@ footer{
 
    .about-me .profile{
       left: 220px;/*105px;*/
+   }
+
+   .technology__container{
+      justify-content: center;
+   }
+
+   .technology__box{
+      width: 80%;
    }
 
    .project__container{
