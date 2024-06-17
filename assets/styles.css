@@ -208,7 +208,7 @@ body{
  .typedText{
    font-family: sans-serif;
    color: #8749f2;
-   font-size: 8px;
+   font-size: 70px;
    font-weight: 600;
    text-transform: capitalize;
  }
@@ -283,19 +283,19 @@ i{
 @keyframes iconSlide{
    25%{
       border: 2px solid #e6d12e;
-      left: 25px;
+      left: 0px;
    }
    50%{
       border: 2px solid #c40101;
-      left: 25px;
+      left: 0px;
    }
    75%{
       border: 2px solid #8749f2;
-      left: 98px;
+      left: 72px;
    }
    100%{
       border: 2px solid #47ea15;
-      left: 169px;
+      left: 145px;
    }
 }
 
@@ -532,7 +532,6 @@ i{
    width: 30%;
    height: 210px;
    background: transparent;
-   border: 2px solid #fff;
    box-shadow: 1px 8px 10px 2px var(--first-shadow);
    cursor: pointer;
 }
@@ -541,17 +540,11 @@ i{
    width: 180px;
    height: 180px;
    overflow: hidden;
-   animation: imgFloat 3s ease-in-out infinite;
 }
 
 
 
 
-@keyframes imgFloat{
-   50%{
-      transform: translateY(10px);
-   }
-}
 
 /*----Project box-----*/
 .project__container{
