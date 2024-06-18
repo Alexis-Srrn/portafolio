@@ -13,7 +13,7 @@
     --body-color : rgba(250,250,250);
     --color-white : rgba(250,250,250);
     --text-color-second : rgba(38,37,37);
-    --first-color : rgba(110,87,224);
+    --first-color : #4B6FA0;/*rgba(110,87,224);*/
     --first-shadow : rgba(0, 0, 0, 0.1);
 
     --box-color: #fff;
@@ -26,6 +26,8 @@
 
     --icon-color: #242526;
     --mode-color: #ccc;
+    /*#4B6FA0
+    morado original -- 4B6FA0*/
 }
 
 body{
@@ -43,7 +45,7 @@ body{
 
     --nav-icon: #fff;
     --logo-color: #fff;
-    --icon-color: #8749f2;
+    --icon-color: #4B6FA0;
     --mode-color: #fff;
  }
 
@@ -201,13 +203,13 @@ body{
    font-size: 50px;
    font-weight: 600;
    margin-block: 20px;
-   color: #8749f2;
+   color: #4B6FA0;
    margin-bottom: 10px;
  }
 
  .typedText{
    font-family: sans-serif;
-   color: #8749f2;
+   color: #4B6FA0;
    font-size: 70px;
    font-weight: 600;
    text-transform: capitalize;
@@ -238,7 +240,7 @@ body{
    padding: 10px 20px;
    cursor: pointer;
    border-radius: 8px;
-   background: #8749f2;
+   background: #4B6FA0;
    font-weight: 500;
    transition: all 0.5s ease;
 }
@@ -267,7 +269,7 @@ i{
    height: 40px;
    color: var(--icon-color);
    border-radius: 50%;
-   box-shadow: 0px 1px 5px 3px #8749f2;
+   box-shadow: 0px 1px 5px 3px #4B6FA0;
    cursor: pointer;
 }
 
@@ -290,7 +292,7 @@ i{
       left: 0px;
    }
    75%{
-      border: 2px solid #8749f2;
+      border: 2px solid #4B6FA0;
       left: 72px;
    }
    100%{
@@ -419,7 +421,7 @@ i{
    cursor: pointer;
    border: 20px;
    border-radius: 20px;
-   background: #8749f2;
+   background: #4B6FA0;
    color: #fff;
    margin-top: 20px;
    font-weight: 500;
@@ -465,7 +467,7 @@ i{
    height: 100%;
    width: 90%;
    border-radius: 6px;
-   background: #8749f2;
+   background: #4B6FA0;
    animation: progress 0.4s ease-in-out forwards;
    opacity: 0;
 }
@@ -509,7 +511,7 @@ i{
    color: #fff;
    padding: 2px 6px;
    border-radius: 20px;
-   background: #8749f2;
+   background: #4B6FA0;
    z-index: 1;
 }
 
@@ -582,15 +584,19 @@ i{
    flex-direction: column;
 }
 
+.project__box h3{
+   color: #4B6FA0;
+}
+
 .project__box a > i{
    font-size: 50px;
-   color: #8749f2;
+   color: #4B6FA0;
    margin-bottom: 25px;
 }
 
 .project__box a label{
    font-size: 15px;
-   color: var(--text-color);
+   color:  var(--text-color);
 }
 
 .project__box::after,
@@ -598,7 +604,7 @@ i{
    content: "";
    position: absolute;
    bottom: -100%;
-   background: #8749f2;
+   background: #4B6FA0;
    width: 100%;
    height: 100%;
    transition: 0.4s;
@@ -655,7 +661,7 @@ i{
 }
 
 .contact__info::after{
-   color: #8749f2;
+   color: #4B6FA0;
 }
 
 .contact__info:hover.contact__info h2,
@@ -723,7 +729,7 @@ textarea{
    justify-content: center;
    margin-left: 40%;
    border: none;
-   background: #8749f2;
+   background: #4B6FA0;
    padding: 10px 20px;
    border-radius: 30px;
    color: #fff;
@@ -762,7 +768,7 @@ footer{
 }
 
 .footer__menu-list a:hover{
-   color: #8749f2;
+   color: #4B6FA0;
 }
 
 .footer-social-icons{
@@ -779,6 +785,7 @@ footer{
 
 .bottom__footer a{
    text-decoration: none;
+   color: #4B6FA0;
 }
 
 /*---Media query = 1024px-------*/
