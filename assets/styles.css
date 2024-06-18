@@ -644,7 +644,6 @@ i{
    border-radius: 20px;
    box-shadow: 1px 8px 10px 2px var(--first-shadow);
    overflow: hidden;
-   cursor: pointer;
 }
 
 .contact__info > h2{
@@ -774,6 +773,10 @@ footer{
 .footer-social-icons{
    display: flex;
    gap:30px;
+   color: var(--color-white);
+}
+
+.footer-social-icons a{
    color: var(--color-white);
 }
 
